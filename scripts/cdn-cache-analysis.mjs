@@ -9,7 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 // ─────────── تنظیمات: در صورت نیاز فقط این دو خط را عوض کنید ───────────
-const PROD_URL  = 'https://spa-ssr-cache-seo-thesis.vercel.app';
+const PROD_URL  = 'https://spa-ssr-cache-seo-thesis-p3be.vercel.app';
 const LOCAL_URL = 'http://localhost:3000';
 // ───────────────────────────────────────────────────────────────────────
 

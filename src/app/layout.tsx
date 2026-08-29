@@ -13,7 +13,7 @@ import EdgeBlur from '@/components/layout/edge-blur'
 import DownloadButton from '@/components/layout/Download'
 
 import { cn } from '@/lib/utils'
-
+import { SITE_URL } from '@/lib/site'
 import './globals.css'
 
 const geistMono = Geist_Mono({
@@ -87,8 +87,9 @@ export const metadata: Metadata = {
       }
     ]
   },
-  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
-  openGraph: {
+ metadataBase: new URL(SITE_URL),
+  alternates: { canonical: './' },
+    openGraph: {
     title: {
       template: '%s - Zolt',
       default: 'Zolt - Portfolio Landing page'
@@ -97,8 +98,8 @@ export const metadata: Metadata = {
       'Zolt is a Free modern Shadcn UI Portfolio Template built with Next.js for designers, developers, freelancers, and agencies to create fast, responsive, and SEO-friendly portfolio websites.',
     type: 'website',
     siteName: 'Zolt',
-    url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`,
-    images: [
+    url: SITE_URL,
+        images: [
       {
         url: '/images/og-image.png',
         type: 'image/png',

@@ -170,3 +170,4 @@ These projects form the backbone of shadcn/studio, allowing us to build a powerf
 - [Discord](https://discord.com/invite/kBHkY7DekX)
 - [YouTube](https://www.youtube.com/@themeselection)
 تست استقرار مسیر کش لبه
+تست استقرار

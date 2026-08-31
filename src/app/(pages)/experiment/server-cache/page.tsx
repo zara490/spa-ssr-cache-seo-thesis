@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'آزمایش C1: رندر با حافظه نهان سروری (Server Cache)',
+  description: 'ارزیابی بهینه‌سازی بار پردازشی سرور و تسریع زمان پاسخ با استفاده از مکانیزم کش درون‌حافظه‌ای سرور.',
+};
+
 import { Vazirmatn } from 'next/font/google';
 import { getCachedDatabaseData } from '@/lib/experiment-data';
 

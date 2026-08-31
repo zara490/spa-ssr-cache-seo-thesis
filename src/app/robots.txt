@@ -1,4 +1,7 @@
-User-Agent: *
+User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /case-study/
+Disallow: /contact/
 
 Sitemap: https://spa-ssr-cache-seo-thesis-p3be.vercel.app/sitemap.xml

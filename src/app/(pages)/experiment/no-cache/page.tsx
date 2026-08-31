@@ -1,9 +1,17 @@
+import type { Metadata } from 'next';
+
+export const dynamic = 'force-dynamic';
+
+export const metadata: Metadata = {
+  title: 'آزمایش C0: رندر بدون حافظه نهان (Base SSR)',
+  description: 'بررسی شاخص‌های کارایی، زمان پاسخ سرور و سئوی فنی در حالت رندر پویای سمت سرور بدون بهره‌گیری از کش.',
+};
+
 import { Vazirmatn } from 'next/font/google';
 import { getMockDatabaseData } from '@/lib/experiment-data';
 
 const vazirmatn = Vazirmatn({ subsets: ['arabic'], display: 'swap' });
 
-export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function NoCachePage() {

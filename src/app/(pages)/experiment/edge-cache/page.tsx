@@ -1,3 +1,12 @@
+import type { Metadata } from 'next';
+
+export const revalidate = 60;
+
+export const metadata: Metadata = {
+  title: 'آزمایش C2: رندر با حافظه نهان CDN و لبه شبکه (Edge Cache)',
+  description: 'تحلیل تحویل محتوا از لایه لبه شبکه (Edge/CDN) و بررسی تأثیر آن بر شاخص‌های حیاتی وب و بهینه‌سازی سئو.',
+};
+
 import { Vazirmatn } from 'next/font/google';
 import { getCachedDatabaseData } from '@/lib/experiment-data';
 
@@ -5,8 +14,6 @@ const vazirmatn = Vazirmatn({ subsets: ['arabic'], display: 'swap' });
 
 // حالت ۳: کش سرور + کش لبه (CDN)
 // به‌جای force-dynamic از revalidate استفاده می‌شود تا پاسخ در شبکه توزیع محتوا نگهداری شود
-export const revalidate = 60;
-
 export default async function EdgeCachePage() {
   const renderStartTime = Date.now();
   const data = await getCachedDatabaseData();
